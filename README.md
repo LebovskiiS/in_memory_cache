@@ -12,13 +12,31 @@ This library provides a simple cache implementation in Go with TTL (time-to-live
 
 ## Installation
 
-To install the library, use the following command:
+To use the library, you need to clone it to your local machine and install its dependencies.
+
+### Steps:
+
+1. **Clone the repository to your machine:**
 
 ```sh
-go get github.com/USERNAME/REPOSITORY_NAME
-```  
+git clone https://github.com/LebovskiiS/in_memory_cache.git
+```
 
-Replace `USERNAME` and `REPOSITORY_NAME` with your GitHub username and repository name.
+2. **Navigate to the project directory:**
+
+```sh
+cd in_memory_cache
+```
+
+3. **Install all necessary dependencies:**
+
+```sh
+go mod tidy
+```
+
+This command will download all the required dependencies listed in the `go.mod` file.
+
+---
 
 ## Usage
 
@@ -30,7 +48,7 @@ package main
 import (
 	"fmt"
 	"time"
-	"github.com/USERNAME/REPOSITORY_NAME/lesson" // Replace with your actual repository path
+	"github.com/LebovskiiS/in_memory_cache/lesson"
 )
 
 func main() {
@@ -58,12 +76,14 @@ func main() {
 		fmt.Println("Key1:", value)
 	}
 }
-```  
+```
+
+---
 
 ## License
 
 This project was written for educational purposes, but you can freely use, modify, and distribute the library in your own projects under fair use conditions.
 
----  
+---
 
 ⭐ Feel free to star the repository and contribute if you find this helpful!
